@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" [routerLink]="['/home']" style="padding-left: 2vw; font-size: 700; line-height: 4vh;">Frontend</a>
+    <button style="margin-left: 80%;" mat-flat-button (click)="logout()">
+        Logout
+    </button>
+    
+  </nav>
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-bottom" style="background-color: #e3f2fd;">
+    
+    <input type="file" id="files"  #fileDropRef (input)="fileUpload($any($event).target.files)"  accept=".json" width="2" height="2" hidden/>
+    <button style="display: block; margin-left: 80%; min-width: 10vw; font-weight: 600; cursor: pointer; " mat-flat-button><label for="files"  >Upload files here</label></button>
+
+  </nav>

@@ -1,0 +1,22 @@
+<div class="container-fluid" style="padding: 10px;margin: 0%;">
+<app-navbar></app-navbar>
+
+<table class="table table-hover " style="margin-top: 3vh; border: 2px solid #bdbdbd;">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col" style="width: 5vw;">User Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Body</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of data">
+        <td scope="row">{{i.sec_id}}</td>
+        <td>{{i.userId}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.body}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
